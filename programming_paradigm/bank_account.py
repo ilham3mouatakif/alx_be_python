@@ -4,6 +4,7 @@ class BankAccount:
     """A simple bank account class."""
 
     def __init__(self, initial_balance=0):
+        """Initialize the account with an optional initial balance."""
         self.account_balance = initial_balance
 
     def deposit(self, amount):
@@ -20,4 +21,4 @@ class BankAccount:
 
     def display_balance(self):
         """Display the current balance."""
-        print(f"Current Balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance:.2f}")
